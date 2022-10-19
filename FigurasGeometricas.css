@@ -1,0 +1,144 @@
+/* PARA ADAPPTAR EL DISEÑO A CUALQUIER DISPOSITIVO MOVIL, DEBEMOS COLOCAR LOS VALORES EN % */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: rgb(237, 235, 249);
+}
+
+/* ENCABEZADO */
+.header {
+    background-color: rgba(43, 17, 60, 0.867);
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.header-tittle {
+    color: white;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.header-description {
+    color: white;
+    padding: 10px 0;
+}
+
+/* RESPUESTA */
+.answer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.answer p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* SECCION DE CAJAS */
+.figure {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    overflow: hidden;
+    max-width: 1000;
+}
+
+.box {
+    width: 22%;
+    height: 600px;
+    border: 3px solid rgba(69, 25, 98, 0.867);
+    border-radius: 10px;
+    margin: 15px;
+    float: left;
+}
+
+.box-header {
+    background-color: rgba(62, 16, 92, 0.703);
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+
+.box-main {
+    text-align: center;
+    padding: 10px;
+}
+
+.box-main__txt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box-main__input {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border: solid rgba(62, 16, 92, 0.703);
+    border-radius: 5px;
+}
+
+.box-main__button {
+    background-color: rgba(67, 15, 95, 0.799);
+    color: white;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.box-main__button:hover {
+    background-color: rgb(194, 118, 238);
+    cursor: pointer;
+}
+
+.box-main__button:active {
+    background-color: rgb(197, 90, 239);
+}
+
+/* WEB RESPONSIVO */
+@media screen and (max-width:1114px) {
+    .figure {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .box {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .box {
+        width: 90%;
+        margin: 25px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .box {
+        width: 90%;
+        margin: 25px;
+        height: auto;
+    }
+
+    .answer p{
+        font-size: 15px;
+    }
+}
